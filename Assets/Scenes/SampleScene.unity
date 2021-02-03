@@ -188,6 +188,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1584428518282023642, guid: d9f2a6d331caed344b627b1257b18de1,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0.48844916
+      objectReference: {fileID: 0}
     - target: {fileID: 1584428518937488968, guid: d9f2a6d331caed344b627b1257b18de1,
         type: 3}
       propertyPath: m_LinearDrag
@@ -468,6 +473,19 @@ SurfaceEffector2D:
   m_UseContactForce: 0
   m_UseFriction: 1
   m_UseBounce: 1
+--- !u!114 &1721324370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721324363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d515365e5a11d74c9bd88e7b064ecda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pancake: {fileID: 1584428518006904862, guid: d9f2a6d331caed344b627b1257b18de1, type: 3}
 --- !u!1 &1811071689 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1584428518006904862, guid: d9f2a6d331caed344b627b1257b18de1,
