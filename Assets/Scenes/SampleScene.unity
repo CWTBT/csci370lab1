@@ -211,7 +211,7 @@ PrefabInstance:
     - target: {fileID: 1584428518282023643, guid: d9f2a6d331caed344b627b1257b18de1,
         type: 3}
       propertyPath: m_CollisionDetection
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1584428518840756006, guid: d9f2a6d331caed344b627b1257b18de1,
         type: 3}
@@ -231,7 +231,7 @@ PrefabInstance:
     - target: {fileID: 1584428518840756008, guid: d9f2a6d331caed344b627b1257b18de1,
         type: 3}
       propertyPath: m_CollisionDetection
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1584428518937488967, guid: d9f2a6d331caed344b627b1257b18de1,
         type: 3}
@@ -246,7 +246,7 @@ PrefabInstance:
     - target: {fileID: 1584428518937488968, guid: d9f2a6d331caed344b627b1257b18de1,
         type: 3}
       propertyPath: m_CollisionDetection
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1584428518937488970, guid: d9f2a6d331caed344b627b1257b18de1,
         type: 3}
@@ -526,7 +526,6 @@ GameObject:
   - component: {fileID: 1721324368}
   - component: {fileID: 1721324369}
   - component: {fileID: 1721324370}
-  - component: {fileID: 1721324371}
   m_Layer: 0
   m_Name: Plate
   m_TagString: Untagged
@@ -657,7 +656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1597542390cf9f46b56f50d5fbbc993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
+  rb: {fileID: 1721324367}
 --- !u!252 &1721324369
 SurfaceEffector2D:
   m_ObjectHideFlags: 0
@@ -689,18 +688,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pancake: {fileID: 1584428518006904862, guid: d9f2a6d331caed344b627b1257b18de1, type: 3}
---- !u!114 &1721324371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721324363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 044395fe495c8964881a1a88daf34823, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1811071689 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1584428518006904862, guid: d9f2a6d331caed344b627b1257b18de1,

@@ -15,7 +15,11 @@ public class FollowMouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = new Vector2(pos.x, transform.position.y);
+        Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 direction = pos - transform.position;
+        direction.y = 0;
+        rb.velocity = direction.normalized * 5000 * Time.deltaTime;
+        Debug.Log("Direction: " + rb.velocity);
+
     }
 }
