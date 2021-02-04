@@ -30,7 +30,7 @@ public class StickMiddle : MonoBehaviour
             //StopMovement(collision);
             GameObject middle = GetMiddlePiece(collision);
 
-            joint = middle.AddComponent(typeof(SpringJoint2D)) as SpringJoint2D;
+            SpringJoint2D joint = middle.AddComponent(typeof(SpringJoint2D)) as SpringJoint2D;
 
             rb = this.gameObject.GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
             joint.connectedBody = rb;
@@ -38,8 +38,8 @@ public class StickMiddle : MonoBehaviour
             joint.distance = 0.1f;
             joint.autoConfigureDistance = false;
             joint.autoConfigureConnectedAnchor = false;
-            joint.connectedAnchor = new Vector2(0f, 0.8f);
-            joint.dampingRatio = 0.9f;
+            joint.connectedAnchor = new Vector2(0f, 1.2f);
+            joint.dampingRatio = 0.7f;
             joint.frequency = 0f;
             //joint.breakForce = 100;
         }

@@ -51,7 +51,6 @@ public class StickAll : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
             GameObject child = pieces[i] as GameObject;
-            Debug.Log(child.name);
             SpringJoint2D joint = child.AddComponent(typeof(SpringJoint2D)) as SpringJoint2D;
 
             rb = this.gameObject.GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
