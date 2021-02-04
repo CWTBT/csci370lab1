@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PancakeStick : MonoBehaviour
+public class PancakeStick1 : MonoBehaviour
 {
 
     bool isStuck = false;
@@ -18,7 +18,7 @@ public class PancakeStick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -28,26 +28,26 @@ public class PancakeStick : MonoBehaviour
         {
             isStuck = true;
             //StopMovement(collision);
-            GameObject middle = GetMiddlePiece(collision);
+            GameObject first = GetFirstPiece(collision);
 
-            joint = middle.AddComponent(typeof(SpringJoint2D)) as SpringJoint2D;
+            joint = first.AddComponent(typeof(SpringJoint2D)) as SpringJoint2D;
 
             rb = this.gameObject.GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
             joint.connectedBody = rb;
 
-            joint.distance = 0.15f;
+            joint.distance = 0.1f;
             joint.autoConfigureDistance = false;
             joint.autoConfigureConnectedAnchor = false;
             joint.connectedAnchor.Set(3.679737e-09f, 0.815f);
-            joint.dampingRatio = 0.05f;
+            joint.dampingRatio = 0.9f;
             joint.frequency = 0f;
             //joint.breakForce = 100;
         }
     }
-    private GameObject GetMiddlePiece(Collision2D collision)
+    private GameObject GetFirstPiece(Collision2D collision)
     {
         GameObject parent = collision.gameObject.transform.parent.gameObject;
-        return parent.transform.GetChild(1).gameObject;
+        return parent.transform.GetChild(0).gameObject;
     }
 
     private void StopMovement(Collision2D collision)
