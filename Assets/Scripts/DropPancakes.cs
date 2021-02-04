@@ -25,7 +25,7 @@ public class DropPancakes : MonoBehaviour
         {
             Instantiate(pancake);
 
-            pancake.transform.position = new Vector2(Random.Range(-5,5),pancake.transform.position.y);
+            pancake.transform.position = new Vector2(Random.Range(-5, 5),pancake.transform.position.y);
 
             yield return new WaitForSeconds(2.5f);
         }
