@@ -18,7 +18,7 @@ public class FollowMouse : MonoBehaviour
         Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector3 direction = pos - transform.position;
         direction.y = 0;
-        rb.velocity = direction.normalized * 5000 * Time.deltaTime;
+        rb.velocity = direction.normalized * 10000 * Time.deltaTime;
         Debug.Log("Direction: " + rb.velocity);
 
     }
