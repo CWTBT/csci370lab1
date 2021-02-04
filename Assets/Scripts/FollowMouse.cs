@@ -13,6 +13,10 @@ public class FollowMouse : MonoBehaviour
     }
 
     // Update is called once per frame
+
+    //https://answers.unity.com/questions/409985/add-force-towards-inputmouseposition-position-not.html
+    // Manipulates the platform's velocity instead of just transforming it.
+    // AddForce didn't work for some reason so directly changed velocity instead.
     void Update()
     {
         Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
