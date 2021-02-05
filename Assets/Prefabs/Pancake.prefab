@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 1584428518282023643}
   - component: {fileID: 1584428518282023642}
   - component: {fileID: 1584428518282023646}
+  - component: {fileID: 8087226707950727826}
   m_Layer: 0
   m_Name: Square (2)
   m_TagString: Pancake
@@ -130,9 +131,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
-  m_GravityScale: 0.1
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -153,15 +154,15 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.5, y: 0}
-  m_ConnectedAnchor: {x: 0.4884496, y: 0}
+  m_ConnectedAnchor: {x: 0.48844913, y: 0}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
-  m_UseLimits: 0
+  m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: -145
-    m_UpperAngle: 145
+    m_LowerAngle: -45
+    m_UpperAngle: 45
 --- !u!61 &1584428518282023646
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -188,6 +189,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8087226707950727826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584428518282023641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e42dfada916f3b341a0396ba8354f4fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1584428518840756006
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +214,7 @@ GameObject:
   - component: {fileID: 1584428518840756008}
   - component: {fileID: 1584428518840756007}
   - component: {fileID: 1584428518840756011}
+  - component: {fileID: 8678886890284030801}
   m_Layer: 0
   m_Name: Square
   m_TagString: Pancake
@@ -285,9 +299,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
-  m_GravityScale: 0.1
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -313,10 +327,10 @@ HingeJoint2D:
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
-  m_UseLimits: 0
+  m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 45
-    m_UpperAngle: 315
+    m_LowerAngle: -45
+    m_UpperAngle: 45
 --- !u!61 &1584428518840756011
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -343,6 +357,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8678886890284030801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584428518840756006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e42dfada916f3b341a0396ba8354f4fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1584428518937488967
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,6 +381,7 @@ GameObject:
   - component: {fileID: 1584428518937488969}
   - component: {fileID: 1584428518937488968}
   - component: {fileID: 1584428518937488971}
+  - component: {fileID: 8339675538603084868}
   m_Layer: 0
   m_Name: Square (1)
   m_TagString: Pancake
@@ -439,9 +466,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
-  m_GravityScale: 0.1
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -473,3 +500,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8339675538603084868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584428518937488967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e42dfada916f3b341a0396ba8354f4fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
